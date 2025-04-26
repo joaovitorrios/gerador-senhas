@@ -3,7 +3,7 @@ const lengthInput = document.getElementById('length');
 const generateBtn = document.getElementById('generate');
 const copyBtn = document.getElementById('copy');
 
-// Caracteres possíveis
+
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+=-[]{}|;:,.<>?/";
 
 generateBtn.addEventListener('click', () => {

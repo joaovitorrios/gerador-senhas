@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -11,44 +11,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    color: #333;
 }
 
 .container {
-    background: white;
-    padding: 30px;
+    background: #fff;
+    padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
 }
 
 h1 {
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+    font-size: 26px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
 }
 
 .input-group {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 #password {
     flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
     outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#password:focus {
+    border-color: #6a11cb;
 }
 
 #copy {
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #2575fc;
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 #copy:hover {
@@ -60,19 +78,31 @@ h1 {
 }
 
 #length {
-    width: 60px;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: 70px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#length:focus {
+    border-color: #6a11cb;
 }
 
 #generate {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #6a11cb;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 #generate:hover {
